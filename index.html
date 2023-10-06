@@ -5,70 +5,84 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather</title>
-     <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-        crossorigin="anonymous"
-      />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-            <div class="form">
-          <form id="search-form">
-              <input type="text" id="city-search" placeholder="Enter a city" autofocus="of" />        
-              <input type="submit" autofocus="of" />
-          </form>
-             </div>
+      <div class="form">
+        <form id="search-form">
+          <input
+            type="text"
+            id="city-search"
+            placeholder="Enter a city"
+            autofocus="of"
+          />
+          <input type="submit" autofocus="of" />
+        </form>
       </div>
-    <div class="container-under-form">
-        <button id="current-location" class="curent-city-button" placeholder="current" autofocus="of">Tap for your location</button>
-        <h2 class="current-city" id="cityInput"></h2>
-        <div class="t-container">
-          <div class="sunn">☀️</div>
-          <div class="t speacial-t">
-            <select onchange="alert(this.value)">
-                <option id="temp-c">C</option>
-                <option id="temp-f">F</option>
-            </select>
-          </div>
-        </div>
-        
-        <div class="c-d-container">
-          <div class="c-d" id="today"></div>
-          <div class="c-h" id="humidity"></div>
-          <div class="c-w" id="wind"></div>
-          <div class="c-o" id="current-description"></div>
-        </div>
-        <div class="d-w-container sun">
-            <div class="c-d-stiker">⛈</div>
-            <div class="c-d">Sun 32°</div>
-        </div>
-        <div class="d-w-container mon">
-            <div class="c-d-stiker">🌥</div>
-            <div class="c-d">Mon 34°</div>
-        </div>
-        <div class="d-w-container tue">
-            <div class="c-d-stiker">🌥</div>
-            <div class="c-d">Tue 35°
-              </div></div>
-        <div class="d-w-container wed">
-            <div class="c-d-stiker">🌥</div>
-            <div class="c-d">Wed 32°</div>
-        </div>
-        <div class="d-w-container thu">
-            <div class="c-d-stiker">🌨</div>
-            <div class="c-d">Thu 29°</div>
-        </div>
-        <div class="d-w-container fri">
-            <div class="c-d-stiker">🌦</div>
-            <div class="c-d">Fri 25°</div>
-        </div>
     </div>
-        <div class="link">
-          <a href="https://github.com/LinaTrueCat/weather-she" target"_blank">Open sourse code</a>
+    <div class="container-under-form">
+      <button
+        id="current-location"
+        class="curent-city-button"
+        placeholder="current"
+        autofocus="of"
+      >
+        Tap for your location
+      </button>
+      <h2 class="current-city" id="cityInput"></h2>
+      <div class="t-container">
+        <div class="sunn">☀️</div>
+        <div class="t speacial-t">
+          <select onchange="alert(this.value)">
+            <option id="temp-c">C</option>
+            <option id="temp-f">F</option>
+          </select>
         </div>
+      </div>
+
+      <div class="c-d-container">
+        <div class="c-d" id="today"></div>
+        <div class="c-h" id="humidity"></div>
+        <div class="c-w" id="wind"></div>
+        <div class="c-o" id="current-description"></div>
+      </div>
+      <div class="d-w-container sun">
+        <div class="c-d-stiker">⛈</div>
+        <div class="c-d">Sun 32°</div>
+      </div>
+      <div class="d-w-container mon">
+        <div class="c-d-stiker">🌥</div>
+        <div class="c-d">Mon 34°</div>
+      </div>
+      <div class="d-w-container tue">
+        <div class="c-d-stiker">🌥</div>
+        <div class="c-d">Tue 35°</div>
+      </div>
+      <div class="d-w-container wed">
+        <div class="c-d-stiker">🌥</div>
+        <div class="c-d">Wed 32°</div>
+      </div>
+      <div class="d-w-container thu">
+        <div class="c-d-stiker">🌨</div>
+        <div class="c-d">Thu 29°</div>
+      </div>
+      <div class="d-w-container fri">
+        <div class="c-d-stiker">🌦</div>
+        <div class="c-d">Fri 25°</div>
+      </div>
+    </div>
+    <div class="link">
+      <a href="https://github.com/LinaTrueCat/weather-she" target="_blank"
+        >Open sourse code</a
+      >
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
