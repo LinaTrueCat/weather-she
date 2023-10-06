@@ -1,5 +1,6 @@
 form {
   margin-top: 10px;
+  margin-left: -15px;
 }
 .container,
 .current-city,
@@ -88,19 +89,19 @@ button {
 }
 .tue {
   margin-left: 110px;
-  margin-top: -64px;
+  margin-top: -59px;
 }
 .wed {
   margin-left: 200px;
-  margin-top: -64px;
+  margin-top: -59px;
 }
 .thu {
   margin-left: 290px;
-  margin-top: -64px;
+  margin-top: -60px;
 }
 .fri {
   margin-left: 380px;
-  margin-top: -64px;
+  margin-top: -60px;
 }
 .city-blet {
   padding-left: 20px;
