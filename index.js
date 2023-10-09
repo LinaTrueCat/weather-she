@@ -43,14 +43,8 @@ function displayWeather(response2) {
 
   let cloud = response2.data.weather[0].main;
   let skyDescription = document.querySelector("#current-description");
-  skyDescription.innerHTML = `${cloud} here`;
-  if (cloud === "Clear") {
-    console.log("☀");
-  } else if (cloud === "rain") {
-    console.log("🌧");
-  } else {
-    console.log("idk");
-  }
+  skyDescription.innerHTML = `${cloud}`;
+  console.log(response2.data);
 }
 
 function showCityName(event) {
@@ -62,6 +56,7 @@ function showCityName(event) {
   let apiKey = "ff1d9ea9376b5c27a82e04fc2b2abdbb";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${citySearch.value}&appid=${apiKey}&units=metric`;
 
+  
   axios.get(apiUrl).then(displayTemp);
   axios.get(apiUrl).then(displayWeather);
   axios.get(apiUrl).then(displayTemp);
